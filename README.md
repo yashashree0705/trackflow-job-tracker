@@ -31,16 +31,13 @@ During competitive hiring cycles, tracking multiple open job applications across
 
 Trackflow uses a decoupled client-server web architecture to safely pass data from input fields down to non-relational database collection models.
 
+| Architectural Layer | Core Platform / Engine | Primary Data Communication Mechanism |
+| :--- | :--- | :--- |
+| **Frontend Client** | React.js (Vite + Tailwind CSS) | Dispatches asynchronous HTTP payload packages via Axios |
+| **Backend Server** | Node.js + Express.js Router | Parses RESTful streams and verifies authentication states |
+| **Database Tier** | MongoDB Atlas Cloud Cluster | Stores non-relational document instances persistently |
 
-```
-
-┌──────────────────────┐      Axios JSON Streams      ┌────────────────────────┐      Native Driver      ┌───────────────────────────┐
-│                      │ ───────────────────────────> │                        │ ──────────────────────> │                           │
-│ React Client Frontend│                              │ Express Router Backend │                         │ MongoDB Atlas Cloud Mongo │
-│                      │ <─────────────────────────── │                        │ <────────────────────── │                           │
-└──────────────────────┘                              └────────────────────────┘                         └───────────────────────────┘
-
-```
+---
 
 ### 📁 Workspace Folder Directory Tree
 ```text
