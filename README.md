@@ -27,7 +27,8 @@ Trackflow uses a decoupled client-server web architecture to safely pass data fr
 
 [React Client Frontend] <---(Axios JSON Streams)---> [Express Router Backend] <---> [MongoDB Atlas Cloud Cluster]
 
-Workspace Folder Directory Tree
+
+### 📁 Workspace Folder Directory Tree
 trackflow-root/
 ├── client/                 # Frontend application workspace
 │   ├── public/             # Static web assets
