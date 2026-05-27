@@ -72,11 +72,12 @@ Ensure you have **Node.js** and **npm** installed on your terminal workspace.
    cd server
 Install the necessary system dependency modules:
 
-Bash
+```bash
 npm install
+
 Set up your environment credentials. Never commit your .env file to source control. Instead, duplicate the included environment template:
 
-Bash
+```bash
 cp .env.example .env
 Open the newly created .env file and fill in your connection variables:
 
@@ -86,19 +87,20 @@ MONGO_URI=your_mongodb_atlas_connection_string
 JWT_SECRET=your_selected_security_passphrase
 Start the backend database execution server:
 
-Bash
+```bash
 npm run dev
 3. Client Frontend Setup
 Open a new separate terminal window and step into the client web app workspace directory:
 
-Bash
+```bash
 cd client
 Install the frontend visual layouts configuration packages:
 
-Bash
+```bash
 npm install
 Start the dynamic client preview web page server:
 
-Bash
+```bash
 npm run dev
-Open your browser and navigate to the local environment link provided (typically http://localhost:5173) to view the application.
+Open your browser and navigate to the local environment link provided
+(typically http://localhost:5173) to view the application.
